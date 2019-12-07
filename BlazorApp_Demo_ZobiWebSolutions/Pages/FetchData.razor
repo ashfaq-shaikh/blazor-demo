@@ -1,0 +1,372 @@
+﻿@page "/"
+@page "/projects"
+
+@using Zobi.Domain.Entities;
+@using BlazorApp_Demo_ZobiWebSolutions.Data
+@using Zobi.Domain.Models
+
+
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject ProjectDataService ProjectDataService
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+
+
+
+<style>
+</style>
+<div class="row">
+    <div class="col-sm-6"><h3>Projects</h3></div>
+    <div class="col-sm-6">
+        <button class="btn btn-primary btn-sm filter-button" @onclick=@(eventArgs => { ClearAllFilter(); })>Clear Filter</button>
+    </div>
+</div>
+
+
+
+<div id="checkboxes">
+    <div class="row filter-row">
+
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">FY</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in fy)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.FY); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">Type</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in type)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.Type); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">Lead</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in lead)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.Lead); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">Month</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in month)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.Month); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">Lever</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in lever)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.Lever); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">RAG</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in Brag)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.BRAG); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+        <div class="col-sm-2 filter-col">
+            <h4 class="filter-title">Stage</h4>
+            <div class="multiselect checkbox-group">
+                @foreach (var item in stage)
+                {
+                    <label>
+                        <input type="checkbox" name="option[]" value="1" @onchange=@(eventArgs => { CheckboxClicked(@item, eventArgs.Value,CheckboxOf.Stage); }) />@item
+                    </label>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix">&nbsp;</div>
+
+<div class="row">
+    @if (projects == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <Indicator Context="fake-reload-table">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table" id="programs">
+                        <thead>
+                            <tr>
+                                <th class="no-sort">View</th>
+                                <th class="no-sort">Ref</th>
+                                <th class="no-sort">Auth</th>
+                                <th>Stage</th>
+                                <th class="no-sort">Status Date</th>
+                                <th>BRAG</th>
+                                <th>Type</th>
+                                <th>Title</th>
+                                <th>Lead</th>
+                                <th class="no-sort">SRO</th>
+                                <th class="no-sort">FY</th>
+                                <th class="no-sort">Infl. Spend</th>
+                                <th class="no-sort">Annual Forecast</th>
+                                <th class="no-sort">In Year Forecast</th>
+                                <th class="no-sort">Lever</th>
+                            </tr>
+                        </thead>
+                        <tbody onbeforeunload="TestDataTablesRemove('#programs')">
+                            @foreach (var project in projects)
+                            {
+                                <tr>
+                                    <td align="center"><span class="fa fa-search fa-lg search-icon"></span></td>
+                                    <td>@project.Ref</td>
+                                    @if (project.Auth == true)
+                                    {
+                                        <td align="center">
+
+                                            <input type="checkbox" checked />
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td align="center">
+
+                                            <input type="checkbox" />
+                                        </td>
+                                    }
+
+
+                                    @if (project.Stage == "Passed Back")
+                                    {
+                                        <td class="PassedBack" align="center">@project.Stage</td>
+                                    }
+                                    else if (project.Stage == "Implemented")
+                                    {
+                                        <td class="Implemented" align="center">@project.Stage</td>
+                                    }
+                                    else if (project.Stage == "Cancelled")
+                                    {
+                                        <td class="Cancelled" align="center">@project.Stage</td>
+                                    }
+                                    else if (project.Stage == "Project Setup")
+                                    {
+                                        <td class="ProjectSetup" align="center">@project.Stage</td>
+                                    }
+                                    else
+                                    {
+                                        <td style="" align="center">@project.Stage</td>
+                                    }
+                                    <td>@project.Status_Date.ToString("yyyy-MM-dd")</td>
+                                    <td align="center">
+
+                                        @if (project.BRAG == "GREEN")
+                                        {
+                                            <span class="GREEN">@project.BRAG</span>
+                                        }
+                                        else if (project.BRAG == "AMBER")
+                                        {
+                                            <span class="AMBER">@project.BRAG</span>
+                                        }
+                                        else if (project.BRAG == "RED")
+                                        {
+                                            <span class="RED">@project.BRAG</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="GREEN">@project.BRAG</span>
+                                        }
+
+                                    </td>
+                                    <td align="center">@project.Type</td>
+                                    <td>@project.Title</td>
+                                    <td>@project.Lead</td>
+                                    <td>@project.SRO</td>
+                                    <td align="center">@project.FY</td>
+                                    <td>@project.Influencable_Spend</td>
+                                    <td>@project.Annual_Forecast</td>
+                                    <td>@project.In_Year_Forecasr</td>
+                                    <td>@project.Lever</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </Indicator>
+    }
+</div>
+
+@code {
+
+    #region Declarations
+    ProjectsModel[] projects;
+
+    string[] fy = { "16/17", "17/18", "18/19" };
+    string[] type = { "Cost Avoidance", "Cost Pressure", "Savings", "Trials" };
+    string[] lead = { "Alex Dorsen", "Andrew Fowler", "Anne Tomkins", "Ashley Waterman", "Lee Johnson" };
+    string[] month = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+    string[] lever = { "Compare & Save", "Contract Review", "Rebate", "Tender" };
+    string[] Brag = { "GREEN", "AMBER", "RED", "GREEN/AMBER" };
+    string[] stage = { "Cancelled", "Implemented", "Passed Back", "Project Setup" };
+
+
+    public List<string> LstFy { get; set; } = new List<string>();
+    public List<string> LstType { get; set; } = new List<string>();
+    public List<string> LstLead { get; set; } = new List<string>();
+    public List<string> lstMonth { get; set; } = new List<string>();
+    public List<string> LstLever { get; set; } = new List<string>();
+    public List<string> LstBrag { get; set; } = new List<string>();
+    public List<string> LstStage { get; set; } = new List<string>();
+
+    #endregion
+
+    #region Events
+    protected override async Task OnInitializedAsync()
+    {
+        CallProjectService();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JSRuntime.InvokeAsync<object>("BindCheckBoxes");
+    }
+
+    /// <summary>
+    ///Clear all filters on click event of button
+    /// </summary>
+    /// <returns></returns>
+    async Task ClearAllFilter()
+    {
+        LstFy.Clear();
+        LstType.Clear();
+        LstLead.Clear();
+        lstMonth.Clear();
+        LstLever.Clear();
+        LstBrag.Clear();
+        LstStage.Clear();
+
+        await Loading.StartTaskAsync(async (task) =>
+        {
+            CallProjectService();
+            await Task.Delay(500);
+        }, "fake-reload-table", "Loading ...", "Downloading table data");
+
+        await JSRuntime.InvokeAsync<object>("ClearAllFilters");
+
+    }
+
+    async Task CheckboxesHideShow()
+    {
+        await JSRuntime.InvokeAsync<object>("CheckboxesHideShowButton");
+    }
+
+    /// <summary>
+    ///Filter checkbox click event. This method will filter all projects data.
+    /// </summary>
+    /// <param name="filterId">Filter text</param>
+    /// <param name="checkedValue">Pass checkbox</param>
+    /// /// <param name="checkboxOf">pass the enum value of CheckboxOf enum</param>
+    /// <returns></returns>
+    async Task CheckboxClicked(string filterId, object checkedValue, CheckboxOf checkboxOf)
+    {
+        switch (checkboxOf)
+        {
+            case CheckboxOf.FY: AddItemToList<string>((bool)checkedValue, LstFy, filterId); break;
+            case CheckboxOf.Type: AddItemToList<string>((bool)checkedValue, LstType, filterId); break;
+            case CheckboxOf.Lead: AddItemToList<string>((bool)checkedValue, LstLead, filterId); break;
+            case CheckboxOf.Month: AddItemToList<string>((bool)checkedValue, lstMonth, filterId); break;
+            case CheckboxOf.Lever: AddItemToList<string>((bool)checkedValue, LstLever, filterId); break;
+            case CheckboxOf.BRAG: AddItemToList<string>((bool)checkedValue, LstBrag, filterId); break;
+            case CheckboxOf.Stage: AddItemToList<string>((bool)checkedValue, LstStage, filterId); break;
+        }
+
+        await Loading.StartTaskAsync(async (task) =>
+        {
+            CallProjectService();
+            await Task.Delay(500);
+        }, "fake-reload-table", "Loading ...", "Downloading table data");
+
+    }
+
+
+    #endregion
+
+    #region Methods
+
+    /// <summary>
+    /// This method will call project service and bind data to projects array variable.
+    /// </summary>
+    /// <returns></returns>
+    async Task CallProjectService()
+    {
+        string fyCsv = String.Join(",", LstFy);
+        string typeCsv = String.Join(",", LstType);
+        string leadCsv = String.Join(",", LstLead);
+        string monthCsv = String.Join(",", lstMonth);
+        string leverCsv = String.Join(",", LstLever);
+        string BragCsv = String.Join(",", LstBrag);
+        string stageCsv = String.Join(",", LstStage);
+
+
+        projects = await ProjectDataService.GetProjectListAsync(fyCsv, typeCsv, leadCsv, monthCsv, leverCsv, BragCsv, stageCsv);
+
+        await JSRuntime.InvokeAsync<object>("DestroyFetchProjectData");
+        await JSRuntime.InvokeAsync<object>("FetchProjectData");
+    }
+    public event Action OnChange;
+
+    private void NotifyStateChanged() => OnChange?.Invoke();
+
+
+    /// <summary>
+    /// Add filter text to perticular list of filter.
+    /// </summary>
+    /// <typeparam name="T">List of filter model</typeparam>
+    /// <param name="checkedValue">boolean</param>
+    /// <param name="obj">List of filter model</param>
+    /// <param name="value">Value of checkbox</param>
+    void AddItemToList<T>(bool checkedValue, List<T> obj, T value)
+    {
+        if ((bool)checkedValue)
+        {
+            if (!obj.Contains(value))
+            {
+                obj.Add(value);
+            }
+        }
+        else
+        {
+            if (obj.Contains(value))
+            {
+                obj.Remove(value);
+            }
+        }
+    }
+    #endregion
+
+}

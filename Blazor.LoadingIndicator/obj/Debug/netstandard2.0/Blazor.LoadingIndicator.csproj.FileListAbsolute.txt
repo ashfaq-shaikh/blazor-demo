@@ -1,0 +1,40 @@
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\bin\Debug\netstandard2.0\Blazor.LoadingIndicator.deps.json
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\bin\Debug\netstandard2.0\Blazor.LoadingIndicator.dll
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\bin\Debug\netstandard2.0\Blazor.LoadingIndicator.pdb
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.csprojAssemblyReference.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\staticwebassets\Blazor.LoadingIndicator.StaticWebAssets.Manifest.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\staticwebassets\Blazor.LoadingIndicator.StaticWebAssets.xml
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.RazorComponent.input.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\RazorDeclaration\DefaultTemplate.razor.g.cs
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\RazorDeclaration\Indicator.razor.g.cs
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\RazorDeclaration\Blazor.LoadingIndicator.dll
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.TagHelpers.input.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.TagHelpers.output.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.RazorCoreGenerate.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Razor\DefaultTemplate.razor.g.cs
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Razor\Indicator.razor.g.cs
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.AssemblyInfoInputs.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.AssemblyInfo.cs
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.RazorTargetAssemblyInfo.cache
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.dll
+D:\31-10-BlazorApp_Demo_ZobiWebSolutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.pdb
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\bin\Debug\netstandard2.0\Blazor.LoadingIndicator.deps.json
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\bin\Debug\netstandard2.0\Blazor.LoadingIndicator.dll
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\bin\Debug\netstandard2.0\Blazor.LoadingIndicator.pdb
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.csprojAssemblyReference.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\staticwebassets\Blazor.LoadingIndicator.StaticWebAssets.Manifest.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\staticwebassets\Blazor.LoadingIndicator.StaticWebAssets.xml
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.RazorComponent.input.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\RazorDeclaration\DefaultTemplate.razor.g.cs
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\RazorDeclaration\Indicator.razor.g.cs
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\RazorDeclaration\Blazor.LoadingIndicator.dll
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.TagHelpers.input.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.TagHelpers.output.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.RazorCoreGenerate.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Razor\DefaultTemplate.razor.g.cs
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Razor\Indicator.razor.g.cs
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.AssemblyInfoInputs.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.AssemblyInfo.cs
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.RazorTargetAssemblyInfo.cache
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.dll
+E:\Working\Ashley Waterman\PAM Project - Blazor App Demo - Zobi Web Solutions\BlazorApp_Demo_ZobiWebSolutions\Blazor.LoadingIndicator\obj\Debug\netstandard2.0\Blazor.LoadingIndicator.pdb

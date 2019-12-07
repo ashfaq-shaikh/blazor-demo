@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\bin\Debug\netstandard2.0\Zobi.Domain.deps.json
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\bin\Debug\netstandard2.0\Zobi.Domain.dll
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\bin\Debug\netstandard2.0\Zobi.Domain.pdb
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\obj\Debug\netstandard2.0\Zobi.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\obj\Debug\netstandard2.0\Zobi.Domain.AssemblyInfo.cs
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\obj\Debug\netstandard2.0\Zobi.Domain.dll
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\obj\Debug\netstandard2.0\Zobi.Domain.pdb
+C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\Zobi.Domain\obj\Debug\netstandard2.0\Zobi.Domain.csprojAssemblyReference.cache
