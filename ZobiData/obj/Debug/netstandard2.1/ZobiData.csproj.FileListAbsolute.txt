@@ -1,5 +1,0 @@
-C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\ZobiData\bin\Debug\netstandard2.1\ZobiData.deps.json
-C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\ZobiData\bin\Debug\netstandard2.1\ZobiData.dll
-C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\ZobiData\obj\Debug\netstandard2.1\ZobiData.csprojAssemblyReference.cache
-C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\ZobiData\obj\Debug\netstandard2.1\ZobiData.AssemblyInfoInputs.cache
-C:\Users\Admin\source\repos\BlazorApp_Demo_ZobiWebSolutions\ZobiData\obj\Debug\netstandard2.1\ZobiData.AssemblyInfo.cs
